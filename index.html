@@ -66,6 +66,44 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <tr onmouseout="inpainting2024_stop()" onmouseover="inpainting2024_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id="inpainting2024_image"><video width=100% height=100% muted autoplay loop>
+                        <source src="images/content/inpainting2024.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <img src="images/content/inpainting2024_square.png" width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function inpainting2024_start() {
+                      document.getElementById('inpainting2024_image').style.opacity = "1";
+                    }
+
+                    function inpainting2024_stop() {
+                      document.getElementById('inpainting2024_image').style.opacity = "0";
+                    }
+                    inpainting2024_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://hubert0527.github.io/MALD-NeRF/" target="_blank">
+                    <papertitle>Taming Latent Diffusion Model for Neural Radiance Field Inpainting
+                    </papertitle>
+                  </a>
+                  <br>
+                  Chieh Hubert Lin, Changil Kim, Jia-Bin Huang, <strong>Qinbo Li</strong>, Chih-Yao Ma,
+                  Johannes Kopf, Ming-Hsuan Yang, Hung-Yu Tseng
+                  <br>
+                  <strong>ECCV 2024</strong>
+                  <br>
+                  <a href="https://hubert0527.github.io/MALD-NeRF/" target="_blank">Project page</a> /
+                  <a href="https://arxiv.org/abs/2404.09995" target="_blank">arXiv</a>
+                  <p></p>
+                  <p></p>
+                </td>
+              </tr>
+
               <tr onmouseout="ltm2024_stop()" onmouseover="ltm2024_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -97,8 +135,9 @@
                   <br>
                   <strong>CVPR 2024</strong>
                   <br>
-                  <a href="https://jh-choi.github.io/LTM/" target="_blank">Project page</a> / 
-                  <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Choi_LTM_Lightweight_Textured_Mesh_Extraction_and_Refinement_of_Large_Unbounded_CVPR_2024_paper.pdf" target="_blank">pdf</a>
+                  <a href="https://jh-choi.github.io/LTM/" target="_blank">Project page</a> /
+                  <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Choi_LTM_Lightweight_Textured_Mesh_Extraction_and_Refinement_of_Large_Unbounded_CVPR_2024_paper.pdf"
+                    target="_blank">pdf</a>
                   <p></p>
                   <p>We present a practical method for reconstructing and optimizing textured meshes of large, unbounded
                     real-world scenes that offer high visual and geometric fidelity.</p>
@@ -281,7 +320,8 @@
           </tr>
           -->
 
-              <tr>
+              <!--
+          <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two">
@@ -305,7 +345,7 @@
                     limb control task in a tool use domain.</p>
                 </td>
               </tr>
-
+            -->
 
               <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle">
@@ -411,12 +451,12 @@
             <tbody>
               <tr>
                 <td style="padding:0px">
-                  <br/>
+                  <br />
                   <p style="text-align:right;font-size:small;">
                     Template from <a href="https://github.com/jonbarron/jonbarron_website" target="_blank">Jon
                       Barron</a>, <br />
-                    Last updated June 2024.
-                    <br/>
+                    Last updated JUL 2024.
+                    <br />
                     <a href="https://www.easycounter.com/">
                       <img src="https://www.easycounter.com/counter.php?sysulqb" border="0" alt="Free Hit Counters">
                     </a>
