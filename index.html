@@ -66,6 +66,43 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <tr onmouseout="texturedGS_stop()" onmouseover="texturedGS_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id="texturedGS_image"><video width=100% height=100% muted autoplay loop>
+                        <source src="images/content/texturedGS.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <img src="images/content/texturedGS_square.png" width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function texturedGS_start() {
+                      document.getElementById('texturedGS_image').style.opacity = "1";
+                    }
+
+                    function texturedGS_stop() {
+                      document.getElementById('texturedGS_image').style.opacity = "0";
+                    }
+                    texturedGS_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://textured-gaussians.github.io/" target="_blank">
+                    <papertitle>Textured Gaussians for Enhanced 3D Scene Appearance Modeling
+                    </papertitle>
+                  </a>
+                  <br>
+                  Brian Chao, Hung-Yu Tseng, Lorenzo Porzi, Chen Gao, Tuotuo Li, <strong>Qinbo Li</strong>, Ayush Saraf, Jia-Bin Huang, Johannes Kopf, Gordon Wetzstein, Changil Kim
+                  <br>
+                  <strong>arXiv preprint 2024</strong>
+                  <br>
+                  <a href="https://textured-gaussians.github.io/" target="_blank">Project page</a> /
+                  <a href="https://arxiv.org/abs/2411.18625" target="_blank">arXiv</a>
+                  <p></p>
+                  <p></p>
+                </td>
+              </tr>
+
               <tr onmouseout="inpainting2024_stop()" onmouseover="inpainting2024_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -144,7 +181,7 @@
                 </td>
               </tr>
 
-              <tr onmouseout="diffusion2023_stop()" onmouseover="diffusion2023_start()" bgcolor="#D6EAF8">
+              <tr onmouseout="diffusion2023_stop()" onmouseover="diffusion2023_start()"><!--bgcolor="#D6EAF8"-->
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id="diffusion2023_image"><video width=100% height=100% muted autoplay loop>
@@ -217,8 +254,8 @@
                 </td>
             </tr>
             -->
-
-              <tr onmouseout="slf_stop()" onmouseover="slf_start()" bgcolor="#D6EAF8">
+            
+              <tr onmouseout="slf_stop()" onmouseover="slf_start()"><!--bgcolor="#D6EAF8"-->
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='siggraph2020_image'><video width=100% height=100% muted autoplay loop>
@@ -247,7 +284,7 @@
                   <strong>Qinbo Li</strong> and
                   <a href="https://people.engr.tamu.edu/nimak/index.html" target="_blank">Nima Kalantari</a>
                   <br>
-                  <strong>SIGGRAPH Asia, 2020</strong>
+                  <strong>SIGGRAPH Asia 2020</strong>
                   <br>
                   <a href="https://people.engr.tamu.edu/nimak/Papers/SIGAsia2020_LF/" target="_blank">project page</a> /
                   <a href="https://people.engr.tamu.edu/nimak/Data/SIGASIA20_LF.pdf" target="_blank">pdf</a> /
@@ -259,6 +296,7 @@
                 </td>
               </tr>
 
+              
               <tr onmouseout="iconip2021_stop()" onmouseover="iconip2021_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -287,7 +325,7 @@
                   <strong>Qinbo Li</strong>,
                   Qing Wan, Sang-Heon Lee, <a href="https://yschoe.github.io/" target="_blank">Yoonsuck Choe</a>
                   <br>
-                  <strong>ICONIP 2021 (Oral Presentation)</strong>
+                  <strong>International Conference on Neural Information Processing 2021</strong>
                   <br>
                   <a href="https://link.springer.com/chapter/10.1007/978-3-030-92273-3_13" target="_blank">pdf</a>
                   <p></p>
@@ -295,6 +333,7 @@
                     information to improve face recognition performance.</p>
                 </td>
               </tr>
+            
 
               <!--
           <tr>
@@ -347,6 +386,7 @@
               </tr>
             -->
 
+            <!--
               <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -371,6 +411,7 @@
                     with Neuroevolution algorithm.</p>
                 </td>
               </tr>
+              -->
 
             </tbody>
           </table>
