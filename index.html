@@ -27,7 +27,7 @@
                     <name>Qinbo Li</name>
                   </p>
                   <p>
-                    I will be joining <a href="https://lumalabs.ai/" target="_blank">Luma AI</a> as a Research Scientist, working on image/video foundation models,
+                    I am a Research Scientist at <a href="https://lumalabs.ai/" target="_blank">Luma AI</a>, working on image/video foundation models,
                     multimodal models, and physical AI.
                   </p>
                   <p>
@@ -142,6 +142,42 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+
+              <tr onmouseout="zero_real_stop()" onmouseover="zero_real_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id="zero_real_image"><video width="100%" height="100%" muted autoplay loop playsinline>
+                        <source src="images/content/zero_real.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <img src="images/content/zero_real_square.jpg" width="160" alt="Robot grasping a test tube">
+                  </div>
+                  <script type="text/javascript">
+                    function zero_real_start() {
+                      document.getElementById('zero_real_image').style.opacity = "1";
+                    }
+
+                    function zero_real_stop() {
+                      document.getElementById('zero_real_image').style.opacity = "0";
+                    }
+                    zero_real_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://zero-real.github.io/" target="_blank">
+                    <papertitle>Pretraining Knows What, Simulation Teaches How: Compositional Generalization for Agentic Robotics</papertitle>
+                  </a>
+                  <br>
+                  Benjamin Pikus, Daniel Saunders, Mircea Mironenco, Salman Mohammadi, Mathew Mathew, Sirou Zhu, Divya Makkar, Xuhua Huang, <strong>Qinbo Li</strong>, Supreeth Narasimhaswamy, Siyuan Cen, Dejia Xu, Shyamal Buch, Thomas Neff
+                  <br>
+                  <strong>CoRL 2026 Late Breaking Results</strong>
+                  <br>
+                  <a href="https://zero-real.github.io/" target="_blank">Project page</a> /
+                  <a href="https://arxiv.org/abs/2610.35817" target="_blank">arXiv</a>
+                  <p></p>
+                  <p></p>
+                </td>
+              </tr>
 
               <tr onmouseout="texturedGS_stop()" onmouseover="texturedGS_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
@@ -523,7 +559,7 @@
                   <p style="text-align:right;font-size:small;">
                     Template from <a href="https://github.com/jonbarron/jonbarron_website" target="_blank">Jon
                       Barron</a>, <br />
-                    Last updated JUN 2026.
+                    Last updated NOV 2026.
                     <br />
                     <a href="https://www.easycounter.com/">
                       <img src="https://www.easycounter.com/counter.php?sysulqb" border="0" alt="Free Hit Counters">
